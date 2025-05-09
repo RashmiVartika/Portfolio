@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rashmi Vartika | Full-Stack Developer</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+
+  <!-- AOS CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f8f9fa;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    .hero {
+      background: linear-gradient(rgba(183, 109, 237, 0.7), rgba(114, 55, 142, 0.7)),
+        url('https://source.unsplash.com/1600x900/?tech,software') center/cover no-repeat;
+      color: white;
+      padding: 160px 0;
+      text-align: center;
+      background-attachment: fixed;
+      box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.7);
+    }
+    .hero h1 {
+      font-size: 4rem;
+      font-weight: 700;
+    }
+    .btn-custom {
+      background-color: #49036f;
+      color: white;
+      transition: all 0.3s ease-in-out;
+      font-size: 1.1rem;
+      padding: 12px 25px;
+      border-radius: 30px;
+    }
+    .btn-custom:hover {
+      background-color: #4c076b;
+      transform: translateY(-2px);
+    }
+    .navbar {
+      background-color: #2e124b;
+    }
+    .navbar-brand {
+      font-size: 1.5rem;
+      font-weight: 600;
+    }
+    .navbar-nav .nav-link {
+      font-size: 1.1rem;
+    }
+    .navbar-nav .nav-link:hover {
+      color: #bf0cfb;
+    }
+    .project-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+      transition: 0.3s ease-in-out;
+    }
+    .about-img {
+      max-width: 80%;
+      border-radius: 50%;
+    }
+    footer {
+      background: #2d0339;
+      color: #ccc;
+      text-align: center;
+      padding: 3rem 1rem;
+      box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.2);
+    }
+    footer a {
+      color: #cdd4d3;
+      margin: 0 15px;
+      font-size: 1.5rem;
+      transition: color 0.3s ease-in-out;
+    }
+    footer a:hover {
+      color: #c545e8;
+    }
+    .project-card {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+      min-width: 300px;
+    }
+    .timeline div {
+      min-width: 140px;
+    }
+    .skill-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+    .skill-item {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .skill-item i {
+      font-size: 1.5rem;
+      color: #7d26e1;
+    }
+    .project-scroll {
+      display: flex;
+      overflow-x: auto;
+      gap: 1rem;
+      padding-bottom: 1rem;
+    }
+    .project-scroll::-webkit-scrollbar {
+      height: 8px;
+    }
+    .project-scroll::-webkit-scrollbar-thumb {
+      background-color: #ccc;
+      border-radius: 4px;
+    }
+    .about-img-wrapper img {
+      transition: transform 0.4s ease-in-out;
+      border-radius: 1rem;
+    }
+    .about-img-wrapper:hover img {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+ <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">Rashmi Vartika</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+        <li class="nav-item"><a class="nav-link" href="#timeline">Journey</a></li>
+        <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero Section -->
+<section class="hero">
+  <div class="container">
+    <h1 data-aos="fade-down">Rashmi Vartika</h1>
+    <p data-aos="fade-up" data-aos-delay="100">Full-Stack Software Developer | Passionate About Scalable Tech</p>
+    <a href="#contact" class="btn btn-custom mt-3" data-aos="fade-up" data-aos-delay="200">Let’s Connect</a>
+    <!--<button id="toggleTheme" class="btn btn-outline-light ms-3" title="Toggle theme"><i class="bi bi-moon-stars"></i></button>-->
+  </div>
+</section>
+
+<!-- About Section -->
+<section id="about" class="py-5 bg-light">
+  <div class="container">
+    <div class="row align-items-center">
+      
+      <!-- Image Section -->
+      <div class="col-md-6 mb-4 mb-md-0 d-flex align-items-stretch" data-aos="fade-right">
+        <div 
+          class="about-img-wrapper shadow w-100 d-flex justify-content-center align-items-center"
+          style="border-radius: 50%; overflow: hidden; transition: transform 0.4s ease-in-out; box-shadow: 0 15px 30px rgba(0,0,0,0.1);"
+          onmouseover="this.style.transform='scale(1.03)'" 
+          onmouseout="this.style.transform='scale(1)'"
+        >
+          <img 
+            src="image/rashmi.jpg" 
+            alt="About Me" 
+            style="width: 100%; height: 100%; object-fit: cover; border-radius: 50%;"
+          >
+        </div>
+      </div>
+      
+
+      <!-- Text Section -->
+      <div class="col-md-6" data-aos="fade-left">
+        <h2 class="fw-bold mb-3" style="color: #a61bd1;">About Me</h2>
+        <p class="text-muted fs-5">
+          I’m a final-year <strong>Computer Science student</strong> with a strong passion for 
+          <strong>software and web development</strong>. I’ve built a solid foundation in 
+          <strong>Python, JavaScript, and C++</strong>, and worked on responsive applications using 
+          <strong>React and Django</strong>.
+        </p>
+        <hr />
+        <p class="text-muted fs-5">
+          My academic projects and internships have exposed me to <strong>full-stack development</strong> 
+          and <strong>version control with Git</strong>. I thrive on solving real-world problems with 
+          clean, efficient code, and I’m eager to learn, grow, and contribute to impactful projects.
+        </p>
+        <hr />
+        <p class="text-muted fs-5">
+          My academic projects and internships have exposed me to <strong>full-stack development</strong> 
+          and <strong>version control with Git</strong>. I thrive on solving real-world problems with 
+          clean, efficient code, and I’m eager to learn, grow, and contribute to impactful projects.
+        </p>
+        <hr />
+        <a href="rashmi.pdf" download class="btn mt-3" style="background-color: #a61bd1; color: white; margin-left: 30%;">
+          <i class="bi bi-download me-2"></i>Download Resume
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Skills Section -->
+<section id="skills" class="py-5" style="background: linear-gradient(#a61bd1, #7d26e1);">
+  <div class="container">
+    <h2 class="text-center mb-4 text-light" data-aos="fade-up">Technical Skills</h2>
+    <div class="skill-grid" data-aos="fade-up" data-aos-delay="100">
+      <div class="skill-item"><i class="bi bi-code-slash"></i>Frontend: HTML, CSS, JavaScript, React.js, Bootstrap</div>
+      <div class="skill-item"><i class="bi bi-hdd-stack"></i>Backend: Node.js, Express, Django, REST APIs</div>
+      <div class="skill-item"><i class="bi bi-database"></i>Databases: MySQL, PostgreSQL, MongoDB</div>
+      <div class="skill-item"><i class="bi bi-tools"></i>Tools: Git, GitHub, Jupyter, VS Code</div>
+      <div class="skill-item"><i class="bi bi-cloud"></i>Cloud: Firebase, Vercel</div>
+    </div>
+  </div>
+</section>
+
+<!-- Projects Section -->
+<section id="projects" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-5" data-aos="fade-up" style="color: #a61bd1;">Featured Projects</h2>
+    <div class="project-scroll">
+      <div class="p-4 bg-white rounded shadow project-card" data-aos="flip-left">
+        <h4>Learning Portal</h4>
+        <img src="https://media.licdn.com/dms/image/v2/D5612AQHo_qF96A7HbQ/article-cover_image-shrink_720_1280/article-cover_image-shrink_720_1280/0/1721400250022?e=2147483647&v=beta&t=OFf_e0Jrug_6T4rlUH4ZBHKgJASXSuqvBlgRHrpgHqE" height="250px" width="250px" style="border-radius: 50%;" />
+        <p>A comprehensive platform for online learning, facilitating course management, student engagement, and assessment.</p>
+        <a href="https://github.com/RashmiVartika/LearningPortal" class="btn btn-sm btn-outline-dark me-2"><i class="bi bi-github"></i> Code</a>
+        <!--<a href="#" class="btn btn-sm btn-outline-success"><i class="bi bi-box-arrow-up-right"></i> Live</a>-->
+      </div>
+      <div class="p-4 bg-white rounded shadow project-card" data-aos="flip-left" data-aos-delay="100">
+        <h4>Location Tracker</h4>
+        <img src="https://img.freepik.com/premium-vector/gps-tracking-map-track-navigation-pins-street-maps-navigate-mapping-technology-locate-position-pin_102902-943.jpg" height="250px" width="280px" style="border-radius: 50%;" />
+        <p>This project leverages the power of Flutter's flexible UI framework and a robust set of features to deliver a seamless and interactive experience.</p>
+        <a href="https://github.com/Saket045/Location_tracker" class="btn btn-sm btn-outline-dark me-2"><i class="bi bi-github"></i> Code</a>
+        <!--<a href="#" class="btn btn-sm btn-outline-success"><i class="bi bi-box-arrow-up-right"></i> Live</a>-->
+      </div>
+      <div class="p-4 bg-white rounded shadow project-card" data-aos="flip-left" data-aos-delay="100">
+        <h4>Sudoku Solver</h4>
+        <img src="https://store-images.s-microsoft.com/image/apps.144.14542392836433411.f51d007e-22a4-4a7f-9718-c479fecce70f.13fa7694-ec8b-4128-a095-8692ea871baa?mode=scale&q=90&h=1080&w=1920" height="250px" width="250px" style="border-radius: 50%;" />
+        <p>A Python-based Sudoku Solver that uses a backtracking algorithm to efficiently solve Sudoku puzzles.</p>
+        <a href="https://github.com/RashmiVartika/Sudoku-Solver" class="btn btn-sm btn-outline-dark me-2"><i class="bi bi-github"></i> Code</a>
+        <!--<a href="#" class="btn btn-sm btn-outline-success"><i class="bi bi-box-arrow-up-right"></i> Live</a>-->
+      </div>
+      <div class="p-4 bg-white rounded shadow project-card" data-aos="flip-left" data-aos-delay="200">
+        <h4>Thread Visualizer</h4>
+        <img src="https://miro.medium.com/v2/resize:fit:900/1*XX-DmkhMjdr3AyDpvlk0Aw.png" height="250px" width="250px" style="border-radius: 50%;" />
+        <p>A real-time web application that shows Producer-Consumer Problem, Semaphore and Deadlock mechanism.</p>
+        <a href="https://github.com/RashmiVartika/Thread-Visualizer" class="btn btn-sm btn-outline-dark me-2"><i class="bi bi-github"></i> Code</a>
+        <!--<a href="#" class="btn btn-sm btn-outline-success"><i class="bi bi-box-arrow-up-right"></i> Live</a>-->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contact" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4" data-aos="fade-up">Let's Work Together</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-8" data-aos="fade-up" data-aos-delay="100">
+        <form action="https://formspree.io/f/yourformid" method="POST">
+          <div class="mb-3">
+            <input type="text" class="form-control" placeholder="Your Name" name="name" required>
+          </div>
+          <div class="mb-3">
+            <input type="email" class="form-control" placeholder="Your Email" name="_replyto" required>
+          </div>
+          <div class="mb-3">
+            <textarea class="form-control" rows="5" placeholder="Your Message" name="message" required></textarea>
+          </div>
+          <button type="submit" class="btn btn-custom">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 Rashmi Vartika. All rights reserved.</p>
+  <p>
+    <a href="https://github.com/RashmiVartika" target="_blank" data-bs-toggle="tooltip" title="GitHub"><i class="bi bi-github"></i></a>
+    <a href="https://linkedin.com/in/rashmi-vartika-8622a5225" target="_blank" data-bs-toggle="tooltip" title="LinkedIn"><i class="bi bi-linkedin"></i></a>
+    <a href="mailto:you@rashmivartika5@gmail.com" data-bs-toggle="tooltip" title="Email"><i class="bi bi-envelope"></i></a>
+  </p>
+</footer>
+
+<!-- JS Scripts -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init();
+
+  // Theme toggle
+  document.getElementById('toggleTheme').onclick = function () {
+    document.body.classList.toggle('bg-dark');
+    document.body.classList.toggle('text-white');
+  };
+
+  // Tooltip init
+  const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+  [...tooltipTriggerList].map(el => new bootstrap.Tooltip(el));
+
+  // Local storage contact form thank you
+  //const form = document.querySelector("form");
+  //form?.addEventListener("submit", function () {
+    localStorage.setItem("contacted", "true");
+  //});
+  if (localStorage.getItem("contacted")) {
+  //  form.innerHTML = "<h5>Thanks for reaching out! I'll get back to you soon 🚀</h5>";
+  }
+</script>
+</body>
+</html>
